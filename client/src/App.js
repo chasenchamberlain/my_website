@@ -21,7 +21,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <p>Server is saying:</p>
+          <p>New details coming soon:</p>
           <p>
             {this.state.data}
           </p>
