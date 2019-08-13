@@ -3,7 +3,7 @@ import React from 'react'
 export default function Landing(props) {
     return (
         <React.Fragment>
-            Coming soon
+            Chasen Chamberlain
         </React.Fragment>
 
     )
