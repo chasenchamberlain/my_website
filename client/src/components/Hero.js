@@ -2,7 +2,9 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
-import heroImage from '../images/horseshoe-bend.jpg'
+import Grid from '@material-ui/core/Grid';
+import Link from '@material-ui/core/Link';
+import heroImage from '../images/wave.jpg';
 
 const useStyles = makeStyles(theme => ({
     mainFeaturedPost: {
@@ -30,17 +32,23 @@ export default function Hero(props) {
     const classes = useStyles();
     return (
         <React.Fragment>
-            <Paper className={classes.mainFeaturedPost}>
-                <div className={classes.mainFeaturedPostContent}>
-                    <Typography component = 'h1' variant = 'h3' color = 'inherit' gutterBottom>
+            <Grid container>
+                <Grid item md={6}>
+                    <Paper className={classes.mainFeaturedPost}>
+                    <div className={classes.mainFeaturedPostContent}>
+                    <Typography component='h1' variant='h3' color='inherit' gutterBottom>
                         Chasen Chamberlain
                     </Typography>
                     <Typography variant="h5" color="inherit" paragraph>
-                    Please hire me because I am a hard worker, thrive in a team environment, and a funny guy.
-                  </Typography>
-                </div>
-
-            </Paper>
+                        Please hire me because I am a hard worker, thrive in a team environment, and a funny guy.
+                    </Typography>
+                    <Link variant="subtile1" href ="https://www.linkedin.com/in/chasenchamberlain/">
+                        My LinkedIn
+                    </Link>
+                        </div>
+                    </Paper>
+                </Grid>
+            </Grid>
         </React.Fragment>
     )
 }
